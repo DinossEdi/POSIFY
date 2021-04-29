@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:posify/constants/colors.dart';
+import 'package:posify/screens/signInScreen.dart';
 import 'package:posify/screens/signUpScreen.dart';
 
 class firstScreen extends StatelessWidget {
@@ -25,16 +26,6 @@ class firstScreen extends StatelessWidget {
             ),
             SizedBox(
               height: 200,
-            ),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(15),
-              child: TextButton(
-                  child: Text(
-                "Sign up",
-                style: TextStyle(
-                  color: kPrimaryColor,
-                ),
-              )),
             ),
             Container(
               width: size.width * 0.8,
@@ -66,7 +57,7 @@ class firstScreen extends StatelessWidget {
               width: size.width * 0.8,
               child: ElevatedButton(
                   onPressed: () {
-                    Get.to(signUpScreen());
+                    Get.to(signInScreen());
                   },
                   style: ElevatedButton.styleFrom(
                       primary: kPrimaryColor,
